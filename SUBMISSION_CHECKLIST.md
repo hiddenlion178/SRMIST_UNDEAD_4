@@ -16,6 +16,6 @@
 - [ ] Official benchmark/test replay run
 - [ ] Final benchmark numbers inserted into submission materials
 - [ ] 5-minute demo video recorded
-- [ ] GitHub final commit tagged PRISM_GENAI_HACKATHON_Y2026
+- [x] GitHub final commit tagged PRISM_GENAI_HACKATHON_Y2026
 
-The unchecked items are deliberately left open because they require official benchmark inputs or a real team action and should not be fabricated.
+The remaining unchecked items require official benchmark inputs or a real team action and should not be fabricated.
