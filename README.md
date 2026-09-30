@@ -29,7 +29,7 @@ The architecture follows the Theme 4 guide's four-stage pipeline: Retrieval Cont
 
 ## Important corpus note
 
-The uploaded `participant-kit-all-themes.zip` contains public material for other themes and does **not** include a Theme 4 corpus. This repo therefore ships a **small local demonstration corpus** in `data/sample_corpus.jsonl` so the prototype is runnable immediately. Replace that file with the official Theme 4 corpus when the official benchmark corpus/test set is provided.
+The supplied participant kit does not provide the official Theme 4 benchmark corpus in the repository. This project therefore uses a clearly labelled local demonstration corpus. This repo therefore ships a **small local demonstration corpus** in `data/sample_corpus.jsonl` so the prototype is runnable immediately. Replace that file with the official Theme 4 corpus when the official benchmark corpus/test set is provided.
 
 The code is deliberately written so a replacement JSONL corpus can be dropped in without changing the architecture.
 
