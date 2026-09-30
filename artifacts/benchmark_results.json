@@ -1,0 +1,43 @@
+{
+  "benchmark_type": "local_engineering_demo",
+  "passed": 5,
+  "total": 5,
+  "pass_rate": 1.0,
+  "cases": [
+    {
+      "name": "early_retrieval",
+      "pass": true,
+      "decision": {
+        "decision": "RETRIEVE",
+        "reason": "stable_search_intent",
+        "trigger": "provisional",
+        "confidence": 0.7100000000000001
+      }
+    },
+    {
+      "name": "multi_intent",
+      "pass": true,
+      "subquery_count": 3
+    },
+    {
+      "name": "late_refinement",
+      "pass": true,
+      "trigger": "late_refinement"
+    },
+    {
+      "name": "query_suppression",
+      "pass": true,
+      "decision": {
+        "decision": "NO_RETRIEVAL",
+        "reason": "presentation_restructure",
+        "trigger": "suppression",
+        "confidence": 0.97
+      }
+    },
+    {
+      "name": "citation_presence",
+      "pass": true,
+      "citation_count": 6
+    }
+  ]
+}

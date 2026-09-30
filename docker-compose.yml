@@ -1,0 +1,23 @@
+services:
+  api:
+    build: .
+    environment:
+      PYTHONPATH: /workspace
+      CORPUS_PATH: data/sample_corpus.jsonl
+      TELEMETRY_PATH: artifacts/telemetry.jsonl
+    volumes:
+      - ./artifacts:/workspace/artifacts
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+  ui:
+    build: .
+    environment:
+      API_URL: http://api:8000
+      PYTHONPATH: /workspace
+    depends_on:
+      - api
+    ports:
+      - "8501:8501"
+    command: streamlit run ui/streamlit_app.py --server.address 0.0.0.0 --server.port 8501

@@ -1,0 +1,9 @@
+{
+  "session_id": "demo-session",
+  "chunks": [
+    {"timestamp_s": 0.0, "text": "I need to plan a customer workshop"},
+    {"timestamp_s": 0.8, "text": "for 30 people in Pune"},
+    {"timestamp_s": 1.6, "text": "and I need the cancellation policy and catering options"},
+    {"timestamp_s": 2.1, "text": "[UTTERANCE_END]"}
+  ]
+}
